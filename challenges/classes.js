@@ -8,8 +8,8 @@
 class CuboidMaker {
   constructor(attributes) {
     (this.length = attributes.length),
-      (this.width = attributes.width),
-      (this.height = attributes.height);
+    (this.width = attributes.width),
+    (this.height = attributes.height);
   }
 
   volume() {

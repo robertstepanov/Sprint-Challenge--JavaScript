@@ -145,7 +145,8 @@ const contactInfo = graduates.map(id => {
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
+const unisWithUni = graduates.filter(it => it.university.includes("Uni"));
+
 console.log(unisWithUni);
 
 // ==== ADVANCED Array Methods ====
@@ -222,8 +223,8 @@ The zoos want to display both the scientific name and the animal name in front o
 */
 const displayNames = [];
 // const displayNames = zooAnimals.forEach(function(currentValue) {
-  // displayNames.push(currentValue.animal_name, currentValue.scientific_name);
-  // console.log(currentValue.animal_name, currentValue.scientific_name);
+// displayNames.push(currentValue.animal_name, currentValue.scientific_name);
+// console.log(currentValue.animal_name, currentValue.scientific_name);
 //}
 console.log(displayNames);
 
@@ -243,7 +244,9 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = zooAnimals.filter(currentValue => currentValue.population < 5);
+const lowPopulationAnimals = zooAnimals.filter(
+  currentValue => currentValue.population < 5
+);
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -261,4 +264,3 @@ console.log(populationTotal);
 Stretch: If you haven't already, convert your array method callbacks into arrow functions.
 
 */
-
