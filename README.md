@@ -38,12 +38,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. Describe the four rules of the 'this' keyword.
 
-5. global binding - bound to the window
-6. implicit binding - bound to whatever is left of the dot
-7. new binding - new keyword constructs a new object that this points to
-8. explicit binding - .call .apply .bind
+1) global binding - bound to the window
+2) implicit binding - bound to whatever is left of the dot
+3) new binding - new keyword constructs a new object that this points to
+4) explicit binding - .call .apply .bind
 
-9. Why do we need super() in an extended class?
+5. Why do we need super() in an extended class?
 
 so that this knows to refer to the parent
 
